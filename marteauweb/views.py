@@ -20,11 +20,12 @@ import yaml
 from redis import Redis
 
 from marteau.node import Node
-from marteau.web.schemas import JobSchema, NodeSchema
 import marteau
 from marteau.util import generate_key
 from marteau.fixtures import get_fixtures, get_fixture
 from marteau.host import Host
+
+from marteauweb.schemas import JobSchema, NodeSchema
 
 
 TOPDIR = os.path.dirname(__file__)

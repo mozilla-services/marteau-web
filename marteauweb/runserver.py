@@ -12,8 +12,8 @@ from marteau.fixtures import get_fixtures
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Funkload Server')
-    parser.add_argument('--config', help='Config file, if any')
+    parser = argparse.ArgumentParser(description='Marteau Server')
+    parser.add_argument('config', help='Config file', nargs='?')
     parser.add_argument('--version', action='store_true',
                         default=False,
                         help='Displays Marteau version and exits.')
@@ -31,15 +31,15 @@ def main():
         print(__version__)
         sys.exit(0)
 
+    if args.config is None:
+        parser.print_usage()
+        sys.exit(0)
+
     # configure the logger
     configure_logger(logger, args.loglevel, args.logoutput)
 
     # loading the config file
-    config = Config()
-
-    if args.config is not None:
-        logger.info('Loading %r' % args.config)
-        config.read([args.config])
+    config = Config(args.config)
 
     # loading the app & the queue
     global_config = {}
