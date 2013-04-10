@@ -1,0 +1,83 @@
+<funkload version="1.16.1" time="2012-08-02T09:30:12.227467">
+<config key="sleep_time_min" value="0.0" />
+<config key="node" value="Tareks-Mac-Book-Air.local" />
+<config key="startup_delay" value="0.0" />
+<config key="cycles" value="[1, 2, 3]" />
+<config key="cycle_time" value="0.0" />
+<config key="description" value="Access 9 times the main url" />
+<config key="configuration_file" value="/Users/tarek/Dev/github.com/marteau/marteau/tests/StupidTest.conf" />
+<config key="class_title" value="Sync Funkload test" />
+<config key="server_url" value="http://google.com" />
+<config key="module" value="loadtest" />
+<config key="id" value="test_simple" />
+<config key="class_description" value="Simple users test" />
+<config key="sleep_time" value="0.0" />
+<config key="sleep_time_max" value="0.5" />
+<config key="duration" value="5" />
+<config key="method" value="test_simple" />
+<config key="log_xml" value="/Users/tarek/Dev/github.com/marteau/marteau/tests/simple-bench.xml" />
+<config key="class" value="StupidTest" />
+<config key="python_version" value="2.7.1" />
+<response cycle="000" cvus="001" thread="000" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925012.23" duration="0.351089000702" />
+<response cycle="000" cvus="001" thread="000" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925012.58" duration="0.836612939835" />
+<response cycle="000" cvus="001" thread="000" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925013.42" duration="0.70174407959" />
+<testResult cycle="000" cvus="001" thread="000" suite="StupidTest" name="test_simple"  time="1343925012.23" result="Successful" steps="1" duration="2.1971449852" connection_duration="1.88944602013" requests="3" pages="1" xmlrpc="0" redirects="1" images="1" links="0" />
+<response cycle="000" cvus="001" thread="000" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925014.43" duration="0.331372022629" />
+<response cycle="000" cvus="001" thread="000" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925014.76" duration="0.630029201508" />
+<response cycle="000" cvus="001" thread="000" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925015.39" duration="0.779845952988" />
+<testResult cycle="000" cvus="001" thread="000" suite="StupidTest" name="test_simple"  time="1343925014.43" result="Successful" steps="1" duration="2.04302406311" connection_duration="1.74124717712" requests="3" pages="1" xmlrpc="0" redirects="1" images="1" links="0" />
+<response cycle="000" cvus="001" thread="000" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925016.47" duration="0.390615940094" />
+<response cycle="001" cvus="002" thread="000" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925018.31" duration="0.322794914246" />
+<response cycle="001" cvus="002" thread="001" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925018.31" duration="0.323090076447" />
+<response cycle="001" cvus="002" thread="000" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925018.63" duration="0.510287046432" />
+<response cycle="001" cvus="002" thread="001" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925018.63" duration="0.543451070786" />
+<response cycle="001" cvus="002" thread="000" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925019.14" duration="0.644619941711" />
+<response cycle="001" cvus="002" thread="001" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925019.18" duration="0.651940107346" />
+<testResult cycle="001" cvus="002" thread="000" suite="StupidTest" name="test_simple"  time="1343925018.31" result="Successful" steps="1" duration="1.57442092896" connection_duration="1.47770190239" requests="3" pages="1" xmlrpc="0" redirects="1" images="1" links="0" />
+<testResult cycle="001" cvus="002" thread="001" suite="StupidTest" name="test_simple"  time="1343925018.31" result="Successful" steps="1" duration="1.85386991501" connection_duration="1.51848125458" requests="3" pages="1" xmlrpc="0" redirects="1" images="1" links="0" />
+<response cycle="001" cvus="002" thread="000" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925019.88" duration="0.332644224167" />
+<response cycle="001" cvus="002" thread="001" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925020.16" duration="0.306717157364" />
+<response cycle="001" cvus="002" thread="000" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925020.21" duration="0.525907039642" />
+<response cycle="001" cvus="002" thread="001" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925020.47" duration="0.535113811493" />
+<response cycle="001" cvus="002" thread="000" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925020.74" duration="0.680066108704" />
+<response cycle="001" cvus="002" thread="001" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925021.01" duration="0.657695055008" />
+<testResult cycle="001" cvus="002" thread="000" suite="StupidTest" name="test_simple"  time="1343925019.88" result="Successful" steps="1" duration="1.80640006065" connection_duration="1.53861737251" requests="3" pages="1" xmlrpc="0" redirects="1" images="1" links="0" />
+<testResult cycle="001" cvus="002" thread="001" suite="StupidTest" name="test_simple"  time="1343925020.16" result="Successful" steps="1" duration="1.56531190872" connection_duration="1.49952602386" requests="3" pages="1" xmlrpc="0" redirects="1" images="1" links="0" />
+<response cycle="001" cvus="002" thread="000" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925021.69" duration="0.320740938187" />
+<response cycle="001" cvus="002" thread="001" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925021.73" duration="0.317484855652" />
+<response cycle="001" cvus="002" thread="000" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925022.01" duration="0.481436014175" />
+<response cycle="001" cvus="002" thread="001" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925022.05" duration="0.521373987198" />
+<response cycle="001" cvus="002" thread="000" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925022.49" duration="0.733050107956" />
+<response cycle="001" cvus="002" thread="001" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925022.57" duration="0.661154985428" />
+<response cycle="002" cvus="003" thread="000" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925023.53" duration="0.311867952347" />
+<response cycle="002" cvus="003" thread="002" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925023.53" duration="0.330687999725" />
+<response cycle="002" cvus="003" thread="001" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925023.53" duration="0.341506958008" />
+<response cycle="002" cvus="003" thread="000" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925023.84" duration="0.518893003464" />
+<response cycle="002" cvus="003" thread="002" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925023.86" duration="0.501548051834" />
+<response cycle="002" cvus="003" thread="001" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925023.87" duration="0.563560009003" />
+<response cycle="002" cvus="003" thread="000" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925024.36" duration="0.787301063538" />
+<response cycle="002" cvus="003" thread="002" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925024.37" duration="0.819555997849" />
+<response cycle="002" cvus="003" thread="001" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925024.44" duration="0.752641916275" />
+<testResult cycle="002" cvus="003" thread="002" suite="StupidTest" name="test_simple"  time="1343925023.53" result="Successful" steps="1" duration="1.83332514763" connection_duration="1.65179204941" requests="3" pages="1" xmlrpc="0" redirects="1" images="1" links="0" />
+<testResult cycle="002" cvus="003" thread="000" suite="StupidTest" name="test_simple"  time="1343925023.53" result="Successful" steps="1" duration="1.87915682793" connection_duration="1.61806201935" requests="3" pages="1" xmlrpc="0" redirects="1" images="1" links="0" />
+<testResult cycle="002" cvus="003" thread="001" suite="StupidTest" name="test_simple"  time="1343925023.53" result="Successful" steps="1" duration="1.96929693222" connection_duration="1.65770888329" requests="3" pages="1" xmlrpc="0" redirects="1" images="1" links="0" />
+<response cycle="002" cvus="003" thread="002" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925025.37" duration="0.325527906418" />
+<response cycle="002" cvus="003" thread="000" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925025.41" duration="0.326027870178" />
+<response cycle="002" cvus="003" thread="001" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925025.5" duration="0.297183036804" />
+<response cycle="002" cvus="003" thread="002" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925025.69" duration="0.506614923477" />
+<response cycle="002" cvus="003" thread="000" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925025.73" duration="0.492019891739" />
+<response cycle="002" cvus="003" thread="001" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925025.8" duration="0.46613907814" />
+<response cycle="002" cvus="003" thread="002" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925026.2" duration="0.61132311821" />
+<response cycle="002" cvus="003" thread="000" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925026.23" duration="0.622910022736" />
+<response cycle="002" cvus="003" thread="001" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925026.27" duration="0.638244867325" />
+<testResult cycle="002" cvus="003" thread="000" suite="StupidTest" name="test_simple"  time="1343925025.41" result="Successful" steps="1" duration="1.57458901405" connection_duration="1.44095778465" requests="3" pages="1" xmlrpc="0" redirects="1" images="1" links="0" />
+<testResult cycle="002" cvus="003" thread="001" suite="StupidTest" name="test_simple"  time="1343925025.5" result="Successful" steps="1" duration="1.65087103844" connection_duration="1.40156698227" requests="3" pages="1" xmlrpc="0" redirects="1" images="1" links="0" />
+<testResult cycle="002" cvus="003" thread="002" suite="StupidTest" name="test_simple"  time="1343925025.37" result="Successful" steps="1" duration="1.82653999329" connection_duration="1.4434659481" requests="3" pages="1" xmlrpc="0" redirects="1" images="1" links="0" />
+<response cycle="002" cvus="003" thread="000" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925026.98" duration="0.348875999451" />
+<response cycle="002" cvus="003" thread="001" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925027.15" duration="0.328321933746" />
+<response cycle="002" cvus="003" thread="002" suite="StupidTest" name="test_simple" step="001" number="001" type="get" result="Successful" url="" code="301" description="" time="1343925027.19" duration="0.320113897324" />
+<response cycle="002" cvus="003" thread="000" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925027.33" duration="0.486300945282" />
+<response cycle="002" cvus="003" thread="001" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925027.48" duration="0.529535055161" />
+<response cycle="002" cvus="003" thread="002" suite="StupidTest" name="test_simple" step="001" number="002" type="get" result="Successful" url="/" code="200" description="" time="1343925027.51" duration="0.505060195923" />
+<response cycle="002" cvus="003" thread="000" suite="StupidTest" name="test_simple" step="001" number="003" type="image" result="Successful" url="/logos/2012/table_tennis-2012-hp.jpg" code="200" description="" time="1343925027.82" duration="0.655251979828" />
+</funkload>

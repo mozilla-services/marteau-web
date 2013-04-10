@@ -1,0 +1,5 @@
+recursive-include marteau/docs *.*
+recursive-include marteau/templates *.mako
+recursive-include marteau/media *.*
+include *.rst
+include marteau.ini
