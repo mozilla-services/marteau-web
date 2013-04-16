@@ -52,7 +52,7 @@ class ConsoleNamespace(BaseNamespace):
         self.spawn(partial(self.listener, jobid))
 
 
-@view_config(route_name='socket_io')
+@view_config(route_name='socket_io', renderer='string')
 def socketio_service(request):
     retval = socketio_manage(request.environ,
         {
