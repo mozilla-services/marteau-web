@@ -18,12 +18,12 @@ class ConsoleNamespace(BaseNamespace):
         #
         # dumping the existing content
         if console is not None:
+            pos = len(console)
+
             for line in console.split('\n'):
                 if line == '':
                     continue
                 self.emit("console.%s" % jobid, line + '\n')
-
-            pos = len(console)
         else:
             pos = 0
 
@@ -35,14 +35,16 @@ class ConsoleNamespace(BaseNamespace):
             status = status and status.get('msg', 'Running') or 'Running'
 
             if console is not None:
-                console = console.split('\n')
+                start = pos
+                pos = len(console)
 
-                for line in console[pos:]:
+                console = console[start:].split('\n')
+
+                for line in console:
                     if line == '':
                         continue
                     self.emit("console.%s" % jobid, line + '\n')
 
-                pos = len(console)
             gevent.sleep(.5)
 
     def on_subscribe(self, console, *args, **kwargs):
@@ -58,4 +60,6 @@ def socketio_service(request):
         }, request=request
     )
 
+    if retval is None:
+        return ''
     return retval
