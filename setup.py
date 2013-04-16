@@ -5,6 +5,7 @@ from marteauweb import __version__
 
 install_requires = ['funkload', 'pyramid',
                     'gevent',
+                    'gevent-socketio',
                     'gevent_subprocess',
                     'PyYAML', 'paramiko',
                     'Mako', 'retools',

@@ -6,7 +6,6 @@
 
 <div id="form">
 <form action="/test" method="POST" class="job">
- <input type="hidden" name="redirect_url" value="/"/>
 
   <fieldset>
     <legend>Basic options</legend>

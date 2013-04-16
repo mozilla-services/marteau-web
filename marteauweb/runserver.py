@@ -1,7 +1,7 @@
 import argparse
 import sys
 
-from waitress.server import WSGIServer
+from socketio.server import SocketIOServer
 from konfig import Config
 
 from marteauweb import __version__, logger
@@ -60,10 +60,11 @@ def main():
 
     app = webapp(global_config, **settings)
     try:
-        httpd = WSGIServer(app, host=args.host, port=args.port)
+        httpd = SocketIOServer((args.host, args.port), app,
+                               resource="socket.io", policy_server=False)
         logger.info('Hammer ready, at http://%s:%s. Where are the nails ?' %
                     (args.host, args.port))
-        httpd.run()
+        httpd.serve_forever()
     except KeyboardInterrupt:
         sys.exit(0)
     finally:

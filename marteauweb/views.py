@@ -189,8 +189,8 @@ def add_run(request):
 
     request.session.flash("Job %r added." % job_id)
 
-    if redirect_url is not None and 'api_call' not in request.POST:
-        return HTTPFound(location=redirect_url)
+    if 'api_call' not in request.POST:
+        return HTTPFound(location='/test/%s' % job_id)
 
     return {'job_id': job_id}
 
@@ -222,8 +222,8 @@ def _requeue_job(request):
     check_auth(request)
     jobid = request.matchdict['jobid']
     queue = request.registry['queue']
-    queue.replay(jobid)
-    return HTTPFound(location='/')
+    job_id = queue.replay(jobid)
+    return HTTPFound(location='/test/%s' % job_id)
 
 
 @view_config(route_name='job', request_method='GET', renderer='console.mako')

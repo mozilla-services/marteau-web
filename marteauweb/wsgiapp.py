@@ -74,6 +74,8 @@ def main(global_config, **settings):
     config.add_route('host', '/hosts/{host:.*}')
     config.add_static_view('media', 'marteauweb:media/')
     config.add_route('karaoke', '/media/marteau.kar')
+    config.add_route('socket_io', 'socket.io/*remaining')
 
     config.scan("marteauweb.views")
+    config.scan("marteauweb.socketio_service")
     return config.make_wsgi_app()

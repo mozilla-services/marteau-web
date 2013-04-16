@@ -1,4 +1,8 @@
 <%inherit file="base.mako"/>
+
+<script src="/media/socket.io.js"></script>
+
+
 <div class="actions">
  <table class='nodes'>
   <tr>
@@ -34,4 +38,30 @@
 
 
 <div style="clear: both"/>
-<pre>${console}</pre>
+
+<div style="padding-top: 5px; padding-left: 20px; padding-right: 20px; background-color: black; color: white">
+ Marteau Console for Job ${job.job_id}
+</div>
+<div id="console" style="overflow-x:hidden; overflow-y:scroll;padding-bottom: 20px;font-family: monospace;white-space: pre;padding-left: 20px; padding-right: 20px; background-color: black; color: white;
+max-height: 500px">
+Waiting for data...
+</div>
+<div style="padding-left: 20px; padding-right: 20px; background-color: black; color: white">
+  <blink>...</blink>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+  // connect to the websocket
+  var socket = io.connect();
+
+  socket.emit("subscribe", 'console.${job.job_id}');
+
+  socket.on("console.${job.job_id}", function(line) {
+    $('#console').append(line);
+   $("#console").scrollTop($("#console")[0].scrollHeight);
+  });
+
+
+
+});
+</script>
