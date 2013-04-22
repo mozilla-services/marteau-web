@@ -44,8 +44,13 @@ class ConsoleNamespace(BaseNamespace):
                     if line == '':
                         continue
                     self.emit("console.%s" % jobid, line + '\n')
+            else:
+                self.emit("console.%s" % jobid, '.')
 
-            gevent.sleep(.5)
+            gevent.sleep(1.)
+
+        # emit the end to reload the status.
+        self.emit("console.%s" % jobid, 'END.%s' % status)
 
     def on_subscribe(self, console, *args, **kwargs):
         jobid = console.split('.')[-1]

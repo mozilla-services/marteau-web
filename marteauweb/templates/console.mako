@@ -7,7 +7,7 @@
  <table class='nodes'>
   <tr>
     <th>Status</th>
-    <td>${status}</td>
+    <td id="status">${status}</td>
   </tr>
   <tr>
     <th>Created</th>
@@ -28,12 +28,14 @@
  </table>
 </div>
 
-<div class="actions">
+<div class="actions" id="actions">
   %if report:
-  <a class="label" href="/report/${job.job_id}/index.html">Report</a>
+  <a id="report" class="label" href="/report/${job.job_id}/index.html">Report</a>
   %endif
-  <a class="label" href="/test/${job.job_id}/delete">Delete</a>
-  <a class="label" href="/test/${job.job_id}/replay">Replay</a>
+  %if 'ended' in job.metadata:
+  <a id="delete" class="label" href="/test/${job.job_id}/delete">Delete</a>
+  <a id="replay" class="label" href="/test/${job.job_id}/replay">Replay</a>
+  %endif
 </div>
 
 
@@ -57,8 +59,29 @@ $(document).ready(function() {
   socket.emit("subscribe", 'console.${job.job_id}');
 
   socket.on("console.${job.job_id}", function(line) {
-    $('#console').append(line);
-   $("#console").scrollTop($("#console")[0].scrollHeight);
+
+    if (line.startsWith("END.")) {
+
+      var status = line.split("END.")
+      status = status[1];
+      $('#status').text(status);
+
+      if (status == "Success") {
+       $("#actions").prepend('<a id="report" class="label" href="/report/${job.job_id}/index.html">Report</a>\n');
+      }
+
+     if (!$('#delete').length) { 
+         $("#actions").prepend('<a id="delete" class="label" href="/test/${job.job_id}/delete">Delete</a>\n');
+     }
+
+     if (!$('#replay').length) { 
+       $("#actions").prepend('<a id="replay" class="label" href="/test/${job.job_id}/replay">Replay</a>\n');
+     }
+    }
+    else {
+      $('#console').append(line);
+      $("#console").scrollTop($("#console")[0].scrollHeight);
+   }
   });
 
 
