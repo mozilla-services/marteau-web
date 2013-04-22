@@ -10,3 +10,5 @@ bin/python:
 
 build: bin/python
 
+docs: 
+	bin/python setup.py build_sphinx

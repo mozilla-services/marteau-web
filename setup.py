@@ -31,8 +31,8 @@ try:
 except ImportError:
     install_requires.append('importlib')
 
-DOCS = os.path.join(os.path.dirname(__file__), 'marteau', 'docs', 'source')
-BUILD = os.path.join(os.path.dirname(__file__), 'marteau', 'docs', 'build')
+DOCS = os.path.join(os.path.dirname(__file__), 'marteauweb', 'docs', 'source')
+BUILD = os.path.join(os.path.dirname(__file__), 'marteauweb', 'docs', 'build')
 
 
 try:
@@ -45,7 +45,7 @@ try:
 
     kwargs = {'cmdclass': {'build_sphinx': BuildDoc},
             'command_options': {'build_sphinx':
-                        {'project': ('setup.py', 'marteau'),
+                        {'project': ('setup.py', 'marteauweb'),
                         'version': ('setup.py', __version__),
                         'release': ('setup.py', __version__),
                         'source_dir': ('setup.py', DOCS),
