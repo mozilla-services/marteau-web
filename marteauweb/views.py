@@ -40,11 +40,18 @@ def check_auth(request):
     if request.user is None:
         raise Forbidden()
 
+    # user white list
+    authorized_users = request.registry.settings.get('authorized_users', '')
+    authorized_users = authorized_users.split(',')
+    for user in authorized_users:
+        if request.user == user:
+            return request.user
+
+    # domain white list
     authorized_domains = request.registry.settings.get('authorized_domains',
                                                        'mozilla.com')
     authorized_domains = authorized_domains.split(',')
     for domain in authorized_domains:
-
         if request.user.endswith('@' + domain):
             return request.user
 
